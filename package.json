@@ -1,0 +1,14 @@
+{
+  "name": "webapp-prj",
+  "version": "1.0.0",
+  "description": "this is the dev of a bookstore management sysytem",
+  "main": "index.js",
+  "scripts": {
+    "build:css":"tailwind build src/style.css -o dist/style.css"
+  },
+  "author": "Wendah Nyiawung",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}

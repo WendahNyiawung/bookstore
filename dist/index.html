@@ -3,195 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/style.css">
     <title>BookStore</title>
 </head>
 <body>
-    <header class="bg-gray-800 sticky top-0">
-       
-        <nav class="flex items-center justify-between  p-6 container mx-auto ">
-            <div>
-               <h1 class="text-white font-semibold text-2xl">BookStore</h1>
+  <header class=" bg-white border border-b-1 h-16 sticky top-0">
+      <nav class="flex items-center justify-between flex-wrap ml-8 mt-4 mb-6">
+         <div class="flex justify-between items-center"> 
+             <h1 class="text-green-500 text-2xl">BookStore</h1>
+            <input type="search" name="search" id="search" placeholder="Search For a book" class="ml-8 border border-green-200 outline-none rounded-full px-2 py-1">
+        </div>
+        <div class="flex justify-between items-center mr-8">
+            <button class="bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded">Request a Book</button>
+            <div class="flex items-center justify-between ml-6 mr-4 hover:bg-gray-300 cursor-pointer rounded-full px-2">
+                <span class="text-gray-500 mr-2">Wendah D</span>
+                <img src="/dist/img/Jay.jpg" alt="profile" class="rounded-full h-8">
             </div>
-            <div class="ml-4">
+            <svg class="fill-current text-gray-600 h-6 w-6 hover:bg-gray-300 rounded-full">
+                <use xlink:href="/dist/icons/sprite.svg#icon-bell"></use>
+            </svg>
+        </div>
 
-                <input class="bg-white focus:outline-none  border border-gray-300 rounded-lg py-2 px-12 block w-full appearance-none leading-normal" type="search" placeholder="Search for a book">
-            </div>
-            <div class="ml-2">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Request a Book
-                  </button>
-            </div>
-          </nav>
-       
-    </header>
-    <section class="bg-gray-100">
-        <div class="flex">
-            <div class="w-48 mr-20 ">
-                <h1 class="text-gray-500 text-center mt-4 mb-4">BROWSE</h1>
-               <a href="#" class="flex items-center hover:bg-gray-400 ">
-                <svg class="h-10 w-8 fill-current text-gray-700 ml-8">
-                    <use xlink:href="/dist/icons/sprite.svg#icon-archive1"></use>
-                </svg>
-                <span class="text-gray-700 ml-4 mr-4 ">Top Books</span>
-               </a>
-               <a href="#" class="flex items-center mt-4 hover:bg-gray-400 ">
-                <svg class="h-10 w-8 fill-current text-gray-700 ml-auto mr-auto">
-                    <use xlink:href="/dist/icons/sprite.svg#icon-pin_drop"></use>
-                </svg>
-                <span class="text-gray-700 mr-8 -ml-10">Discover</span>
-               </a>
-               <a href="#" class="flex items-center mt-4 hover:bg-gray-400 ">
-                <svg class="h-10 w-8 fill-current text-gray-700 ml-auto mr-auto">
-                    <use xlink:href="/dist/icons/sprite.svg#icon-inbox"></use>
-                </svg>
-                <span class="text-gray-700 mr-6 -ml-12 ">Categories</span>
-               </a>
+      </nav>
+  </header>
+  <section class="flex  justify-between flex-wrap bg-gray-100">
+      <div class="flex flex-col px-8 py-14 fixed">
+          <h1 class="text-gray-500 my-4">BROWSE</h1>
+          <div class="flex justify-between items-center px-4 hover:bg-gray-300 cursor-pointer">
+              <svg class="fill-current text-gray-600 h-8 w-8">
+                  <use xlink:href="/dist/icons/sprite.svg#icon-inbox"></use>
+              </svg>
+              <span class=" text-gray-600 px-8 -ml-6">Top Books</span>
 
-            </div>
-           <div class="flex flex-col">
-            <div class="ml-10 mt-16 flex mx-2">
-                <div class="rounded bg-white overflow-hidden px-6">
-                   <img src="/dist/books/49.jpg" alt="" class="h-48 w-48">
-                   <div>
-                       <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                   </div> 
-                </div>
-                <div class="rounded bg-white overflow-hidden">
-                    <img src="/dist/books/cover-47523.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/cover-auto-20646.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/cover-auto-26126.jpg" alt="" class="h-48 w-48"">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/cover-cust-1242.jpg" alt=""class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/cover-cust-1620.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/cover-cust-44.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 
-            </div>
-            <div class="ml-10 mt-16 flex mx-2">
-                <div class="rounded bg-white overflow-hidden px-6">
-                   <img src="/dist/books/cover-orig-5924.jpg" alt="" class="h-48 w-48">
-                   <div>
-                       <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                   </div> 
-                </div>
-                <div class="rounded bg-white overflow-hidden">
-                    <img src="/dist/books/5a33df64ed0803f545135541e6683b79028310ac.jpeg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/51Yf9-INWaL._SX265_BO1,204,203,200_.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/41f3XhMcZiL._SX317_BO1,204,203,200_.jpg" alt="" class="h-48 w-48"">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/51T5j8kw6mL._SY344_BO1,204,203,200_.jpg" alt=""class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/LauraScott_HealingHerHeart_2500.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/images.jpeg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 
-            </div>
-            <div class="ml-10 mt-16 flex mx-2">
-                <div class="rounded bg-white overflow-hidden px-6">
-                   <img src="/dist/books/cover-orig-5924.jpg" alt="" class="h-48 w-48">
-                   <div>
-                       <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                   </div> 
-                </div>
-                <div class="rounded bg-white overflow-hidden">
-                    <img src="/dist/books/5a33df64ed0803f545135541e6683b79028310ac.jpeg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/51Yf9-INWaL._SX265_BO1,204,203,200_.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/41f3XhMcZiL._SX317_BO1,204,203,200_.jpg" alt="" class="h-48 w-48"">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/51T5j8kw6mL._SY344_BO1,204,203,200_.jpg" alt=""class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/LauraScott_HealingHerHeart_2500.jpg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 <div class="rounded bg-white overflow-hidden px-6">
-                    <img src="/dist/books/images.jpeg" alt="" class="h-48 w-48">
-                    <div>
-                        <h1 class="text-center font-semibold text-xl mt-1 mb-1">4500 XAF</h1>
-                    </div> 
-                 </div>
-                 
-            </div>
-
-           </div>
-            
+          </div>
+          <div class="flex justify-between items-center px-4 hover:bg-gray-300 mt-4 cursor-pointer">
+            <svg class="fill-current text-gray-600 h-8 w-8">
+                <use xlink:href="/dist/icons/sprite.svg#icon-pin_drop"></use>
+            </svg>
+            <span class=" text-gray-600 px-8 -ml-6">Discover</span>
 
         </div>
-        
-    </section>
-    
+        <div class="flex justify-between items-center px-4 hover:bg-gray-300 mt-4 cursor-pointer">
+            <svg class="fill-current text-gray-600 h-8 w-8">
+                <use xlink:href="/dist/icons/sprite.svg#icon-archive1"></use>
+            </svg>
+            <span class=" text-gray-600 px-8 -ml-6">Category</span>
+
+        </div>
+
+      </div>
+      <div class="flex flex-col ml-64">
+          <h1 class="text-gray-400 py-6">Recently Added</h1>
+          <div class=" grid grid-rows-3 grid-flow-col gap-4 pr-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+              <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                  <img src="/dist/books/Steve.jpg" alt="Steve">
+                  <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+              </div>
+              <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/trilogy.jpeg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/brother.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/oldman_and_the_sea.jpeg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/49.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/kingsley.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/millionare.png" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/images.jpeg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/LauraScott_HealingHerHeart_2500.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/josephus.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/inno.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/edith.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/cover-cust-1242.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/cover-auto-20646.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            <div class="flex flex-col bg-white rounded overflow-hidden hover:shadow-xl">
+                <img src="/dist/books/cover-auto-26126.jpg" alt="Steve">
+                <span class="text-gray-600  px-1 py-2">4500 FCFA</span>
+            </div>
+            
+            
+            
+             
+
+          </div>
+
+      </div>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
